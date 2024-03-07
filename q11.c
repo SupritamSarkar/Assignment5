@@ -51,19 +51,22 @@ int main(){
         }
 
 	//Diagonals
-	
 
-
-
-
-
-
-
-
-
-
-
-
+        int dig=0;
+        for(int m=0;m<row;m++){
+                for(int n=0;n<col;n++){
+                        if((m==n && arr[m][n]==0) || (m!=n && arr[m][n]!=0)){
+                                dig=1;
+                                break;
+                        }
+                }
+        }
+        if (dig==0){
+                printf("It is a diagonal matrix.");
+        }
+        else{
+                printf("It is not a diagonal matrix.");
+        }
 
 
 	return 0;
